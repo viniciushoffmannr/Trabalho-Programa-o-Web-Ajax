@@ -14,7 +14,7 @@ $(document).ready(function () {
       data: JSON.stringify(data),
       contentType: "application/json",
 
-      success: function () {
+      success: () => {
         $("#responseArea").text(
           `O livro "${$("#title").val()}" foi cadastrado com sucesso!`
         );
@@ -23,7 +23,7 @@ $(document).ready(function () {
         $("#body").val("");
       },
 
-      error: function () {
+      error: () => {
         $("#responseArea").text(
           `Ops! Tivemos um problema do nosso lado ao tentar cadastrar o livro "${$(
             "#title"
