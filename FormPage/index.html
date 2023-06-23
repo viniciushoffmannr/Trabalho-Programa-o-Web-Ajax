@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Cadastro de Livro</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <div class="container">
+        <h1>Cadastre seu livro</h1>
+
+        <div>
+          <label for="title">Título:</label>
+          <input
+            type="text"
+            id="title"
+            name="title"
+            placeholder="Informe o título do livro"
+            required
+          />
+        </div>
+
+        <div>
+          <label for="body">Resumo:</label>
+          <textarea
+            id="body"
+            name="body"
+            placeholder="Informe uma breve descrição do livro"
+            required
+          ></textarea>
+        </div>
+
+        <p id="responseArea"></p>
+
+        <button type="submit" id="botaoCadastrar">Cadastrar Livro</button>
+      </div>
+    </div>
+    <script src="../jquery-3.7.0.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
